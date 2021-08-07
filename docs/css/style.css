@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+img {
+  width: 100%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 30px;
+  font-weight: 400;
+}
+
+.caption-basic {
+  background: rgba(0,0,0,0.6);
+  padding: 10px 30px;
+  font-weight: 400;
+}
+
+.welcome {
+  background-image: url("../images/swiss.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+.welcome-title-wrapper {
+  font-weight: 900;
+  margin: auto 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.welcome-title {
+  text-shadow: 2px 5px black;
+  font-size: 8vw;
+}
+
+.welcome-subtitle {
+  font-size: 24px;
+  text-shadow: 1px 3px black;
+}
+
+.part1-title-wrapper {
+  text-align: center;
+  font-weight: 400;
+  margin: auto 24px;
+  max-width: 720px;
+}
+
+.part1-heading {
+  font-size: 21px;
+}
+
+.part1-subheading {
+  color: #555;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.part2 {
+  margin: auto 24px;
+}
+.part2-title-wrapper {
+  text-align: left;
+  font-weight: 400;
+  margin: auto 24px;
+  max-width: 720px;
+}
+
+.part2-heading,
+.part2-body,
+.part2-list {
+  font-size: 21px;
+  line-height: 2;
+}
+
+.part2-list {
+  color: #52a908
+}
+
+.part2-heading {
+  font-weight: 900;
+}
+
+.photo-caption {
+  margin-left: 24px;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .welcome-title-wrapper,
+  .part1-title-wrapper,
+  .part2-title-wrapper  {
+    margin: auto;
+  }
+
+  .part1-heading,
+  .part2-heading,
+  .part2-body,
+  .part2-list {
+    font-size: 2vw;
+  }
+
+  .part1-subheading {
+    font-size: 1.4vw;
+  }
+}
