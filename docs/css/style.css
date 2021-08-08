@@ -59,6 +59,7 @@ img {
 
 .part1-heading {
   font-size: 21px;
+  line-height: 1.6;
 }
 
 .part1-subheading {
@@ -109,7 +110,6 @@ img {
   .part2-body,
   .part2-list {
     font-size: 2vw;
-    line-height: 1.5;
   }
 
   .part1-subheading {
