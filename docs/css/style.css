@@ -109,6 +109,7 @@ img {
   .part2-body,
   .part2-list {
     font-size: 2vw;
+    line-height: 1.5;
   }
 
   .part1-subheading {
