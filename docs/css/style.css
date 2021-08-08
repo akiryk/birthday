@@ -48,6 +48,7 @@ img {
 .welcome-title {
   text-shadow: 2px 5px black;
   font-size: 8vw;
+  line-height: 1.3;
 }
 
 .welcome-subtitle {
@@ -107,8 +108,12 @@ img {
   font-weight: 900;
 }
 
+.caption {
+  color: white;
+}
+
 .photo-caption {
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 @media screen and (min-width: 680px) {
