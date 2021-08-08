@@ -8,8 +8,12 @@ img {
 }
 
 .section {
-  height: 100vh;
   display: flex;
+  padding: 24px;
+}
+
+.section--full {
+  height: 100vh;
 }
 
 .caption {
@@ -30,12 +34,13 @@ img {
   background-image: url("../images/swiss.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 55%;
   flex-direction: column;
 }
 
 .welcome-title-wrapper {
   font-weight: 900;
-  margin: auto 24px;
+  margin: auto;
   text-align: center;
   color: #fff;
 }
@@ -53,7 +58,7 @@ img {
 .part1-title-wrapper {
   text-align: center;
   font-weight: 400;
-  margin: auto 24px;
+  margin: auto;
   max-width: 720px;
 }
 
@@ -68,28 +73,37 @@ img {
   margin-top: 60px;
 }
 
-.part2 {
-  margin: auto 24px;
+.details {
+  margin: auto;
 }
-.part2-title-wrapper {
+.details-title-wrapper {
   text-align: left;
   font-weight: 400;
-  margin: auto 24px;
+  margin: auto;
   max-width: 720px;
 }
 
-.part2-heading,
-.part2-body,
-.part2-list {
-  font-size: 21px;
-  line-height: 2;
+.details-heading,
+.details-body,
+.details-list {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.part2-list {
-  color: #52a908
+.details-list,
+.list-link {
+  /* color: #52a908; */
+  line-height: 2.5;
+  color: rgb(0, 165, 194);
+  /* font-style: italic; */
+  text-decoration: none;
 }
 
-.part2-heading {
+.list-link:hover {
+  color: rgb(0, 85, 100);
+}
+
+.details-heading {
   font-weight: 900;
 }
 
@@ -97,19 +111,43 @@ img {
   margin-left: 24px;
 }
 
+@media screen and (min-width: 680px) {
+  .part1-heading {
+    font-size: 21px;
+    line-height: 2;
+  }
+  .details-heading,
+  .details-body,
+  .details-list {
+    font-size: 21px;
+  }
+
+  .part1-subheading {
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
 
   .welcome-title-wrapper,
   .part1-title-wrapper,
-  .part2-title-wrapper  {
+  .details-title-wrapper  {
     margin: auto;
   }
 
-  .part1-heading,
-  .part2-heading,
-  .part2-body,
-  .part2-list {
-    font-size: 2vw;
+}
+
+
+@media screen and (min-width: 1260px) {
+
+  .part1-heading {
+    font-size: 2.25vw;
+    line-height: 2;
+  }
+  .details-heading,
+  .details-body,
+  .details-list {
+    font-size: 1.6vw;
   }
 
   .part1-subheading {
