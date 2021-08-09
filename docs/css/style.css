@@ -117,6 +117,10 @@ img {
 }
 
 @media screen and (min-width: 680px) {
+  .section {
+    padding: 32px;
+  }
+
   .part1-heading {
     font-size: 21px;
     line-height: 2;
@@ -157,5 +161,10 @@ img {
 
   .part1-subheading {
     font-size: 1.4vw;
+  }
+
+  .part1-title-wrapper,
+  .details-title-wrapper {
+    max-width: 40%;
   }
 }
